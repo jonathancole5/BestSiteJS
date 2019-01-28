@@ -1,0 +1,61 @@
+/* Make sure you specify a "height: 100vh", "width: 100vw", and "margin: 0" for all your pages */
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	display: flex;
+}
+
+img:hover{
+	cursor: pointer;
+}
+
+/* You should know what the class does just by looking at the name (the name should be DESCRIPTIVE) */
+.left-column {
+	height: calc(100%/3);
+	width: 50%;
+}
+
+.lower-column {
+	/*display: flex;*/
+	height: 100%;
+	width: 100%;
+}
+
+.right-column {
+	height: 100%;
+	width: 50%;
+}
+
+ .p {
+ display: block;
+ }
+ 
+.lcolor {
+	background-image: linear-gradient(to right, #2C591A, #468C29);
+}
+
+.lmcolor {
+	max-height: 100%;
+	/*background-image: linear-gradient(to right, #A68711, #D9B017);*/
+	background-color: yellow;
+}
+
+.rcolor{
+	background-image: radial-gradient(#A61500, #730F00);
+}
+
+/* Use this class on the PARENT of whatever you are trying to center; remember that the PARENT tells the CHILD what to do! */
+/* NOTE: Centering content only works when the display property is "flex"! */
+.center-content {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Use this class on your image to restrict the size so it stays completely within it's parent div */
+.restrict-img-size {
+	display: flex;
+	max-height: 100%;
+	max-width: 100%;
+}
